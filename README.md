@@ -7,12 +7,12 @@
 </p>
 
 
-<h1>YakuzaDiscordBOT</h1>
+<h1>Yakuza-Discord-BOT</h1>
 
 <h3>About</h3>
 DiscordBot do clan Yakuza
 <br>
-<em>R.I.P Ysiilva.</em>
+<em>founded by ySiilva.</em>
 
 
  
