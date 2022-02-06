@@ -10,7 +10,7 @@
 <h1>Yakuza-Discord-BOT</h1>
 
 <h3>About</h3>
-DiscordBot do clan Yakuza
+Discord Bot em Python - Clan Yakuza.
 <br>
 <em>founded by ySiilva.</em>
 
