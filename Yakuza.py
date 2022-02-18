@@ -10,7 +10,7 @@ from discord.ext.commands import has_permissions
 Config = ConfigParser()
 [Config.read(file) for file in os.listdir() if file.endswith('.ini')]
 
-ConverTime = datetime.datetime.strptime
+ConvertTime = datetime.timedelta
 
 # Clear console
 def clear():
@@ -237,7 +237,7 @@ async def track(ctx, *, track: str):
 
 	Nb = len(Track)-5
 	for s in Tracks:
-		Songs += str(f"**{Tracks[s]['n']}.** [{Tracks[s]['artist']['name']} - {Tracks[s]['song_title']}]({Tracks[s]['url']}) - [`{ConverTime(str(Tracks[s]['duration']), '%M%S')}`]\n")
+		Songs += str(f"**{Tracks[s]['n']}.** [{Tracks[s]['artist']['name']} - {Tracks[s]['song_title']}]({Tracks[s]['url']}) - [`{str(ConvertTime(seconds=Tracks[s]['duration']))}`]\n")
 	Songs += str(f"\nRequested by: {ctx.author.mention}")
 
 	musicEmbed = discord.Embed(
